@@ -1,0 +1,101 @@
+/* Layout */
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin:0;
+    background:whitesmoke;
+}
+
+/* we have a media query with the condition of min width being 400px or bigger and for all media types the color will be red*/
+/* @media (min-width: 600px) {
+    body{
+        background: orange;
+    }
+
+    
+} */
+
+h1{
+    margin-top: 1em;
+    font-size: 3rem;
+     color: #212614;
+     text-align: center;
+
+}
+/* compound selector */
+h1 span{
+    color:#b7832f
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 0;
+}
+
+/* max width of img is 100% so that there is no scroll required */
+img{
+    max-width: 100%;
+}
+/* o auto is used to center everything */
+.container{
+    width: 95%;
+    max-width: 1080px;
+    margin: 0 auto; 
+}
+
+.columns{
+    display:flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+/* @media (max-width:600px) {
+    .columns{
+        flex-direction: column;
+    }
+    /* the only reason did not work was that the col-1,2, 3 defined below overwrite the ones i mentioned in the media query */
+    /* .col-1{
+        width:100%
+    }
+    .col-2{
+        width:100%
+    }
+    .col-3{
+        width:100%
+    } */
+
+/*} */
+
+.col-1{
+    width:20%
+
+}
+
+.col-2{
+    width: 45%
+
+}
+
+.col-3{
+    width:70%
+
+}
+
+.col-bg{
+    background-color: #212614;
+    color:white;
+    padding: 1em;
+}
+
+@media (max-width:600px) {
+    .columns{
+        flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 100%;
+    }
+    
+}
